@@ -138,7 +138,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: black;
-  background: white url(/content/img/muster.png) repeat scroll bottom center;
+  background: white url(../content/img/muster.png) repeat scroll bottom center;
   /*
   -webkit-background-size: cover;
   -moz-background-size: cover;
