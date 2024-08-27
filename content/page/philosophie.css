@@ -1,0 +1,31 @@
+#warum strong {
+    color: #108413!important;
+}
+
+#warum h1 {
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #108413;
+}
+
+#warum blockquote {
+    border-color: #AAAAAA;
+    font-style: italic;
+    background-color: #eeeeee;
+}
+
+#warum .reason-head {
+    margin-top: 13px;
+}
+
+#warum .fa {
+    color: #108413;
+    margin-right: 8px;
+}
+
+
+@media (max-width: 767px) {
+    #warum .reason-head {
+        font-size: 1.25em;
+    }
+}
