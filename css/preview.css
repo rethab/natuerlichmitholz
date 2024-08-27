@@ -1,0 +1,62 @@
+.socials {
+    margin-top: 16px;
+}
+
+.content-head p{
+    margin-bottom: 0px;
+    font-size: 9pt;
+}
+
+
+.preview {
+    position: relative;
+    font-family: sans-serif;
+    display: block;
+    height: 16em;
+    overflow: hidden;
+}
+.preview .text {
+    overflow: hidden;
+    font-size: .95em;
+    line-height: 1;
+    text-align: justify;
+}
+
+.preview img{
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+/* TODO move custom style into template*/
+.preview h1{
+    font-size: 13pt;
+    text-align: center;
+}
+
+.preview h2{
+    font-size: 11pt;
+}
+
+.preview h3{
+    font-size: 10pt;
+}
+
+.preview p{
+    font-size: 10pt;
+}
+
+/* RESPONSIVE CSS
+    -------------------------------------------------- */
+@media (max-width : 1279px) {
+    .preview .text{
+        text-align: left;
+    }
+}
+
