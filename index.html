@@ -3,17 +3,48 @@
 
 <head>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script src="js/simple-lightbox.jquery.min.js"></script>
+    <link href="css/simple-lightbox.min.css" rel="stylesheet">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="hostli-watchcat" content="ONLINE">
 
     <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Include CSS used by MarkdownBlog -->
-    <meta charset="utf-8"><meta name="description" content="Guadagnini Holzbau GmbH - Ökologisches Bauen mit nachhaltigen Produkten aus der Region für einen gesunden Wohnraum"><meta name="robots" content="INDEX,FOLLOW"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="hostli-watchcat" content="ONLINE"><meta name="Content-Language" content="DE"><meta name="author" content="Guadagnini Holzbau GmbH"><meta name="copyright" content="Guadagnini Holzbau GmbH"><meta name="keywords" content="Guadagnini,Guadagnini Holzbau GmbH,ökologisch,Holzbau,Thurgau,natuerlichmitholz.ch"><title>Guadagnini Holzbau</title><meta property="og:title" content="Guadagnini Holzbau"><meta property="og:description" content="Guadagnini Holzbau GmbH - Ökologisches Bauen mit nachhaltigen Produkten aus der Region für einen gesunden Wohnraum"><meta property="og:url" content="https://natuerlichmitholz.ch/"><meta property="og:image" content="content/img/business_card_1.png"><meta property="og:type" content="website"><link href="lib/prismjs/css/okaidia.css" rel="stylesheet" type="text/css"><link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="lib/wow/animate.css" rel="stylesheet" type="text/css"><link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><link href="css/style.css" rel="stylesheet" type="text/css"><link href="css/philosophie.css" rel="stylesheet" type="text/css"><link href="css/angebot.css" rel="stylesheet" type="text/css"><link href="css/kontakt.css" rel="stylesheet" type="text/css"><link href="css/sitemap.css" rel="stylesheet" type="text/css"><link href="css/footer.css" rel="stylesheet" type="text/css"><script src="lib/jquery/js/jquery.min.js"></script><script src="lib/bootstrap/js/bootstrap.min.js"></script>    <!-- Custom CSS -->
+    <meta charset="utf-8">
+    <meta name="description" content="Guadagnini Holzbau GmbH - Ökologisches Bauen mit nachhaltigen Produkten aus der Region für einen gesunden Wohnraum">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="hostli-watchcat" content="ONLINE">
+    <meta name="Content-Language" content="DE">
+    <meta name="author" content="Guadagnini Holzbau GmbH">
+    <meta name="copyright" content="Guadagnini Holzbau GmbH">
+    <meta name="keywords" content="Guadagnini,Guadagnini Holzbau GmbH,ökologisch,Holzbau,Thurgau,natuerlichmitholz.ch">
+    <title>Guadagnini Holzbau</title>
+    <meta property="og:title" content="Guadagnini Holzbau">
+    <meta property="og:description" content="Guadagnini Holzbau GmbH - Ökologisches Bauen mit nachhaltigen Produkten aus der Region für einen gesunden Wohnraum">
+    <meta property="og:url" content="https://natuerlichmitholz.ch/">
+    <meta property="og:image" content="content/img/business_card_1.png">
+    <meta property="og:type" content="website">
+    <link href="lib/prismjs/css/okaidia.css" rel="stylesheet" type="text/css">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="lib/wow/animate.css" rel="stylesheet" type="text/css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/philosophie.css" rel="stylesheet" type="text/css">
+    <link href="css/angebot.css" rel="stylesheet" type="text/css">
+    <link href="css/kontakt.css" rel="stylesheet" type="text/css">
+    <link href="css/sitemap.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
     <link href="css/grayscale.css" rel="stylesheet">
 
     <!-- favicon -->
@@ -55,26 +86,6 @@
           content="content/favicon/browserconfig.xml">
     <meta name="theme-color" content="#108413">
 
-    <!-- Piwik -->
-    <script type="text/javascript">
-        var _paq = _paq || [];
-        _paq.push(["setDomains", ["*.natuerlichmitholz.ch"]]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function () {
-            var u = "//hostli.ch/analytics/";
-            _paq.push(['setTrackerUrl', u + 'piwik.php']);
-            _paq.push(['setSiteId', 7]);
-            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-            g.type = 'text/javascript';
-            g.async = true;
-            g.defer = true;
-            g.src = u + 'piwik.js';
-            s.parentNode.insertBefore(g, s);
-        })();
-    </script>
-    <!-- End Piwik Code -->
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -83,6 +94,12 @@
     <![endif]-->
 
     <meta name="google-site-verification" content="Co9DcvHjGuF374f2VflExt7d2cBMt7SqMsiidBBvs7g" />
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.gallery-kuechen a').simpleLightbox({ /* options */ });
+        });
+    </script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -102,7 +119,7 @@
             <ul class="nav navbar-nav">
                 <li class="hidden">
                     <a href="#page-top"></a>
-                </li> 
+                </li>
                 <li ><a class="page-scroll" href="#warum">Warum Holz?</a></li><li ><a class="page-scroll" href="#angebot">Angebot</a></li><li ><a class="page-scroll" href="#kontakt">Kontakt</a></li>            </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -375,7 +392,7 @@
         <div class="portfolio-box">
 
           <div class="img-resize">
-            <img class="thumbnail" alt="Kreatives aus Holz" title="Kreatives aus Holz" src="content/img/angebot/kreatives_aus_holz.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Kreatives aus Holz" title="Kreatives aus Holz" src="content/img/angebot/kreatives_aus_holz.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -393,7 +410,7 @@
         <div class="portfolio-box">
 
           <div class="img-resize">
-            <img class="thumbnail" alt="Terrassen" title="Terrassen" src="content/img/angebot/terrasse.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Terrassen" title="Terrassen" src="content/img/angebot/terrasse.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -413,7 +430,7 @@
       <div class="col-md-offset-0 col-md-6 col-xs-10 col-xs-offset-1">
         <div class="portfolio-box">
           <div class="img-resize">
-            <img class="thumbnail" alt="Decken, Böden, Wände" title="Decken, Böden, Wände" src="content/img/angebot/decken_boeden_waende_2.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Decken, Böden, Wände" title="Decken, Böden, Wände" src="content/img/angebot/decken_boeden_waende_2.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -430,7 +447,7 @@
       <div class=" col-md-offset-0 col-md-6 col-xs-10 col-xs-offset-1">
         <div class="portfolio-box">
           <div class="img-resize">
-            <img class="thumbnail" alt="Treppen, Leitern" title="Treppen, Leitern" src="content/img/angebot/treppen_leitern.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Treppen, Leitern" title="Treppen, Leitern" src="content/img/angebot/treppen_leitern.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -453,7 +470,7 @@
         <div class="portfolio-box">
 
           <div class="img-resize">
-            <img class="thumbnail" alt="Möbel, Schränke" title="Möbel, Schränke" src="content/img/angebot/moebel_schraenke.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Möbel, Schränke" title="Möbel, Schränke" src="content/img/angebot/moebel_schraenke.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -471,7 +488,7 @@
         <div class="portfolio-box">
 
           <div class="img-resize">
-            <img class="thumbnail" alt="Holzbau" title="Holzbau" src="content/img/angebot/neubau_renovationen_mit_holz.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Holzbau" title="Holzbau" src="content/img/angebot/neubau_renovationen_mit_holz.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -492,7 +509,7 @@
         <div class="portfolio-box">
 
           <div class="img-resize">
-            <img class="thumbnail" alt="Küchenbau" title="Küchenbau" src="content/img/angebot/kuechenbau.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Küchenbau" title="Küchenbau" src="content/img/angebot/kuechenbau.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -509,7 +526,7 @@
       <div class=" col-md-offset-0 col-md-6 col-xs-10 col-xs-offset-1">
         <div class="portfolio-box">
           <div class="img-resize">
-            <img class="thumbnail" alt="Tische" title="Tische" src="content/img/angebot/tische.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Tische" title="Tische" src="content/img/angebot/tische.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -531,7 +548,7 @@
         <div class="portfolio-box">
 
           <div class="img-resize">
-            <img class="thumbnail" alt="Türen, Tore" title="Türen, Tore" src="content/img/angebot/tueren_tore.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Türen, Tore" title="Türen, Tore" src="content/img/angebot/tueren_tore.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -548,7 +565,7 @@
       <div class=" col-md-offset-0 col-md-6 col-xs-10 col-xs-offset-1">
         <div class="portfolio-box">
           <div class="img-resize">
-            <img class="thumbnail" alt="Katzenleiter" title="Katzenleiter" src="content/img/angebot/katzenleiter.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Katzenleiter" title="Katzenleiter" src="content/img/angebot/katzenleiter.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -570,7 +587,7 @@
         <div class="portfolio-box">
 
           <div class="img-resize">
-            <img class="thumbnail" alt="Balkon" title="Balkon" src="content/img/angebot/balkon.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Balkon" title="Balkon" src="content/img/angebot/balkon.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -588,7 +605,7 @@
         <div class="portfolio-box">
 
           <div class="img-resize">
-            <img class="thumbnail" alt="Fenster, Gauben" title="Fenster, Gauben" src="content/img/angebot/fenster_gauben.jpg">
+            <img style="width: 100%" class="thumbnail" alt="Fenster, Gauben" title="Fenster, Gauben" src="content/img/angebot/fenster_gauben.jpg">
           </div>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
@@ -602,7 +619,28 @@
 
   </div>
 </div>
-</div></div></section><section id="kontakt"><div class="onepager-item"><div class="container"><div class="row">
+            <h2 class="text-center portfolio-header">Küchen</h2>
+            <div class="row">
+                <div class="gallery-kuechen">
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-a.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-a.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-b.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-b.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-d.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-d.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-e.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-e.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-g.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-g.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-h.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-h.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-i.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-i.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-j.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-j.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-k.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-k.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche-l.jpg"><img class="thumbnail" src="content/img/kuechen/kueche-l.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche1.jpg"><img class="thumbnail" src="content/img/kuechen/kueche1.jpg" alt="" title="" style="width:100%"/></a></div>
+                    <div class="col-md-3 col-sm-2"><a href="content/img/kuechen/kueche2.jpg"><img class="thumbnail" src="content/img/kuechen/kueche2.jpg" alt="" title="" style="width:100%"/></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="kontakt"><div class="onepager-item"><div class="container"><div class="row">
     <h2 class="text-center" >Kontakt</h2>
     <div class="col-sm-offset-1 col-sm-6 col-md-offset-0 col-md-4 ">
         <p>
@@ -617,7 +655,7 @@
         </p>
     </div>
     <div class="col-sm-4 col-md-offset-4 col-md-4 hidden-xs ">
-<!-- 
+<!--
       <img class="business-card" src="content/img/business_card_1.png">
 -->
       <a href="#Kontakt" class="business-card"  ></a>
@@ -627,7 +665,7 @@
 
 
 </div></div></section>
-<!-- 
+<!--
 <section id="about" class="container content-section text-center">About Section -->
 
 <!-- Footer -->

@@ -1,7 +1,3 @@
-#angebot img{
-    width: 100%;
-}
-
 #angebot .onepager-item{
     /* background: rgba(16, 132, 17, 0.7); */
     background: white url(../content/img/muster.png) repeat scroll bottom center;
